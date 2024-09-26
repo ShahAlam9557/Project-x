@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey to help us improve our services.</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+    <br>
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+    <br>
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" min="18" max="100" placeholder="Enter your age" required>
+    <br>
+    <select id="dropdown">
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+    </select>
+    <br>
+    <label>Radio buttons:</label>
+    <input type="radio" id="radio1" name="radio" value="radio1">
+    <label for="radio1">Radio 1</label>
+    <input type="radio" id="radio2" name="radio" value="radio2">
+    <label for="radio2">Radio 2</label>
+    <br>
+    <label>Checkboxes:</label>
+    <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1">
+    <label for="checkbox1">Checkbox 1</label>
+    <input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2">
+    <label for="checkbox2">Checkbox 2</label>
+    <br>
+    <label>Additional comments:</label>
+    <textarea id="comments"></textarea>
+    <br>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
